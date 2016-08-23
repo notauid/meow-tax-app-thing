@@ -1,0 +1,98 @@
+<doctype html>
+<html>
+  <head>
+    <title>Meow Tax App Thing</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/meow-tax-app-thing.css">
+  </head>
+  <body>
+    <div id="meow-tax-app-thing">
+      <h1>Meow Tax App Thing</h1>
+      <p>Select your state, enter your number of squirrels, chipmunks and moles, and see what you owe the Meow Revenue Service.</p>
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <label for="state">State</label>
+            </th>
+            <td>
+              <select id="state">
+                <option value="none">No state selected</option>
+                <option value="confusion">Confusion</option>
+                <option value="affairs">Affairs</option>
+                <option value="being">Being</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="squirrels">Income from catching squirrels</label>
+            </th>
+            <td>
+              <input id="squirrels">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="chipmunks">Income from catching chipmunks</label>
+            </th>
+            <td>
+              <input id="chipmunks">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="moles">Number of moles caught</label>
+            </th>
+            <td>
+              <input id="moles">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="squirrel-tax">Squirrel tax</label>
+            </th>
+            <td>
+              <input id="squirrel-tax" readonly="readonly">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="tax-deductable-moles">Number of tax-deductable moles</label>
+            </th>
+            <td>
+              <input id="tax-deductable-moles" readonly="readonly">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="mole-tax-deduction">Mole tax deduction</label>
+            </th>
+            <td>
+              <input id="mole-tax-deduction" readonly="readonly">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="chipmunk-tax-pre">Chipmunk tax before mole tax deduction</label>
+            </th>
+            <td>
+              <input id="chipmunk-tax-pre" readonly="readonly">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="chipmunk-tax-post">Chipmunk tax after mole tax deduction</label>
+            </th>
+            <td>
+              <input id="chipmunk-tax-post" readonly="readonly">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="error">
+      </div>
+    </div>
+    <script type="text/javascript" src="/meow-tax-app-thing.js"></script>
+  </body>
+</html>

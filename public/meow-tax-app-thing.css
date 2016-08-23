@@ -1,0 +1,130 @@
+body {
+  background-color: #eee;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/*
+
+  * in CSS means select all elements.
+
+  A box-sizing of border-box changes padding and border so that they're
+  calculated as part of the width and height when they're set, rather
+  than added on top of them.
+  
+  PT sans is a Google Font (see the HTML file for how it's included),
+  we'll just use it on everything.
+  
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*
+
+  This makes the box around the page.
+  
+*/
+
+#meow-tax-app-thing {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80em;
+  padding: 2em;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: center;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  
+  Tables, by default, don't take up the whole width of their
+  containers.
+  
+*/
+
+table {
+  width: 100%;
+}
+
+th {
+  padding: 1em;
+  vertical-align: top;
+  text-align: right;
+  width: 50%;
+}
+
+td {
+  padding: 1em;
+  vertical-align: top;
+  text-align: left;
+  width: 50%;
+}
+
+input, select {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  -webkit-appearance: none;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  max-width: 20em;
+  font-size: 1.25em;
+  line-height: 1.05em;
+}
+
+/*
+
+  Output fields have a different background color to show
+  the user that they're different. [] targets an attribute
+  on the element, so this selector only matches inputs
+  with a readonly attribute.
+
+*/
+
+input[readonly] {
+  background-color: #fff;
+}
+
+/*
+
+  The labels had to be padded to align them with the text boxes
+  as expected. So that the padding drives it vertically, its display
+  has to be block.
+
+*/
+
+label {
+  display: block;
+  padding: 0.5em;
+  font-size: 1.25em;
+  line-height: 1.05em;
+}
+
+#error {
+  display: block;
+  text-align: center;
+  color: #c00;
+  padding: 0.5em;
+  font-size: 1.25em;
+  line-height: 1.05em;
+}

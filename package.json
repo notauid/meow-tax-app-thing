@@ -1,0 +1,14 @@
+{
+  "name": "meow-tax-app-thing",
+  "version": "0.0.1",
+  "description": "Meow Tax App Thing, because useful descriptions are overrated",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
